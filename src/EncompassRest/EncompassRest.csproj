@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net5.0;netcoreapp3.1;netstandard2.1;netstandard2.0</TargetFrameworks>
-    <Version>1.2.0-1</Version>
+    <TargetFrameworks>netcoreapp3.1;netstandard2.0</TargetFrameworks>
+    <Version>1.2.2-3</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/bjatchley/EncompassRest</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -12,8 +12,8 @@
     <PublishRepositoryUrl>True</PublishRepositoryUrl>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <LangVersion>latest</LangVersion>
-    <AssemblyVersion>1.2.0.1</AssemblyVersion>
-    <FileVersion>1.2.0.1</FileVersion>
+    <AssemblyVersion>1.2.2.3</AssemblyVersion>
+    <FileVersion>1.2.2.3</FileVersion>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <Configurations>Debug;Release;CI</Configurations>
     <SignAssembly>true</SignAssembly>
@@ -28,7 +28,7 @@
 
   <ItemGroup>
     <PackageReference Include="Enums.NET" Version="3.0.2" />
-    <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.11" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
     <PackageReference Include="System.IO.Compression" Version="4.3.0" />
@@ -64,5 +64,9 @@
   <PropertyGroup Condition="'$(TargetFramework)'=='net46'">
     <AssemblyTitle>EncompassRest .NET 4.6</AssemblyTitle>
     <DefineConstants>STRING_GENERIC_IENUMERABLE;ICLONEABLE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netcoreapp3.1|AnyCPU'">
+    <OutputPath></OutputPath>
   </PropertyGroup>
 </Project>
