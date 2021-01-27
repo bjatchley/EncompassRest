@@ -1,25 +1,29 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net5.0;netcoreapp3.1;netstandard2.1;netstandard2.0</TargetFrameworks>
-    <Version>1.2.0</Version>
+    <Version>1.2.0-1</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageProjectUrl>https://github.com/EncompassRest/EncompassRest</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/bjatchley/EncompassRest</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Title>EncompassRest</Title>
     <PackageTags>encompass rest api client</PackageTags>
-    <Description>Encompass API Client Library for .NET</Description>
+    <Description>Encompass API Client Library for .NET Core</Description>
     <Summary>Encompass API Client Library for .NET</Summary>
     <PublishRepositoryUrl>True</PublishRepositoryUrl>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <LangVersion>latest</LangVersion>
-    <AssemblyVersion>1.2.0.0</AssemblyVersion>
-    <FileVersion>1.2.0.0</FileVersion>
+    <AssemblyVersion>1.2.0.1</AssemblyVersion>
+    <FileVersion>1.2.0.1</FileVersion>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <Configurations>Debug;Release;CI</Configurations>
     <SignAssembly>true</SignAssembly>
     <DelaySign>false</DelaySign>
     <AssemblyOriginatorKeyFile>encompassrest.snk</AssemblyOriginatorKeyFile>
     <Nullable>enable</Nullable>
+    <PackageId>EncompassClient</PackageId>
+    <Product>EncompassClient</Product>
+    <Company>Fairway Independent Mortgage Company</Company>
+    <Authors>Fairway Independent Mortgage Company</Authors>
   </PropertyGroup>
 
   <ItemGroup>
